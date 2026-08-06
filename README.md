@@ -1,8 +1,9 @@
 # 🚀 Douglas Williams | Portfólio
 
-<p align="center">
-  <img src="./public/images/portfolio-preview.jpeg" alt="Preview do Portfólio Douglas Williams" width="100%">
-</p>
+
+<img width="1368" height="653" alt="image" src="https://github.com/user-attachments/assets/a77e28d4-6a6c-4199-b0ae-104f4e589af5" />
+
+
 
 <p align="center">
   <strong>Desenvolvedor Full Stack | Futuro DBA PostgreSQL</strong>
