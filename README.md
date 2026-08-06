@@ -63,9 +63,14 @@ O objetivo é transmitir minha identidade profissional através de um layout mod
 ```bash
 portfolio-next/
 
-public/
-    images/
-
+public
+│
+├── images
+│   ├── hero
+│   ├── profile
+│   ├── projects
+│   ├── icons
+│   └── background
 src/
 │
 ├── app/
