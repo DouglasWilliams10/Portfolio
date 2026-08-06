@@ -1,7 +1,7 @@
 # 🚀 Douglas Williams | Portfólio
 
 <p align="center">
-  <img src="./public/images/portfolio-preview.jpg" alt="Preview do Portfólio Douglas Williams" width="100%">
+  <img src="./public/images/portfolio-preview.jpeg" alt="Preview do Portfólio Douglas Williams" width="100%">
 </p>
 
 <p align="center">
