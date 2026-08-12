@@ -1,195 +1,36 @@
-# 🚀 Douglas Williams | Portfólio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Getting Started
 
-<img width="1368" height="653" alt="image" src="https://github.com/user-attachments/assets/a77e28d4-6a6c-4199-b0ae-104f4e589af5" />
-
-
-
-<p align="center">
-  <strong>Desenvolvedor Full Stack | Futuro DBA PostgreSQL</strong>
-</p>
-
-<p align="center">
-  Um portfólio moderno desenvolvido com <strong>Next.js</strong>, focado em performance, design futurista e uma excelente experiência do usuário.
-</p>
-
----
-
-## ✨ Demonstração
-
-> Em breve disponível online.
-
----
-
-## 📖 Sobre o Projeto
-
-Este portfólio foi desenvolvido para apresentar minha trajetória, habilidades técnicas, projetos e experiências na área de desenvolvimento de software.
-
-O objetivo é transmitir minha identidade profissional através de um layout moderno, responsivo e com animações suaves.
-
----
-
-## 🛠 Tecnologias Utilizadas
-
-- ⚛️ Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- PostgreSQL
-- Prisma ORM
-- Node.js
-- Docker
-- Git
-
----
-
-## 🎨 Principais Funcionalidades
-
-- ✅ Design moderno com tema Dark
-- ✅ Totalmente responsivo
-- ✅ Animações suaves
-- ✅ Sessão Sobre Mim
-- ✅ Habilidades Técnicas
-- ✅ Projetos em destaque
-- ✅ Linha do tempo profissional
-- ✅ Contato
-- ✅ SEO otimizado
-- ✅ Alta performance
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash
-portfolio-next/
-
-public
-│
-├── images
-│   ├── hero
-│   ├── profile
-│   ├── projects
-│   ├── icons
-│   └── background
-src/
-│
-├── app/
-│
-├── components/
-│
-│   layout/
-│
-│      Sidebar.tsx
-│      Header.tsx
-│      Footer.tsx
-│
-│   hero/
-│
-│      Hero.tsx
-│
-│   sections/
-│
-│      About.tsx
-│      Skills.tsx
-│      Projects.tsx
-│      Timeline.tsx
-│      Contact.tsx
-│
-│   ui/
-│
-│      Button.tsx
-│
-├── hooks/
-├── services/
-├── styles/
-├── lib/
-├── utils/
-├── types/
-└── data/
-```
-
----
-
-## 🚀 Como executar o projeto
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/seuusuario/portfolio.git
-```
-
-Entre na pasta:
-
-```bash
-cd portfolio
-```
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Execute:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Acesse:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-http://localhost:3000
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 💻 Projetos em Destaque
+## Learn More
 
-- ERP Comercial
-- Sistema DDMRP
-- Sistema Bancário
-- Outros projetos Full Stack
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📚 Atualmente estudando
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- PostgreSQL
-- Prisma
-- Arquitetura de Software
-- Docker
-- Performance Web
-- Clean Architecture
-- Desenvolvimento Full Stack
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 📈 Objetivos
-
-- Tornar-me especialista em Banco de Dados
-- Evoluir continuamente como Desenvolvedor Full Stack
-- Construir aplicações escaláveis
-- Compartilhar conhecimento através de projetos
-
----
-
-## 📬 Contato
-
-📧 douglas
-
-💼 LinkedIn
-
-🐙 GitHub
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
-
----
-
-<p align="center">
-Desenvolvido com ❤️ por <strong>Douglas Williams</strong>
-</p>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
