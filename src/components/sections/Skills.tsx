@@ -1,15 +1,4 @@
-const skills = [
-  "SQL",
-  "PostgreSQL",
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Node.js",
-  "Prisma",
-  "Docker",
-  "Git",
-  "Tailwind",
-];
+import { skills } from "@/src/data/skills";
 
 export default function Skills() {
   return (
@@ -32,22 +21,39 @@ export default function Skills() {
           </h2>
 
           <p className="mt-4 max-w-2xl text-gray-400">
-            Tecnologias e ferramentas que utilizo ou estudo
-            durante minha evolução como desenvolvedor.
+            Tecnologias que utilizo, estudo e pretendo
+            aprofundar ao longo da minha carreira.
           </p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 
           {skills.map((skill) => (
-            <div
-              key={skill}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/10"
+            <article
+              key={skill.name}
+              className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/[0.04]"
             >
-              <h3 className="font-semibold text-white transition-colors group-hover:text-cyan-400">
-                {skill}
+              <div className="flex items-center justify-between">
+
+                <span className="text-xs uppercase tracking-wider text-cyan-400">
+                  {skill.category}
+                </span>
+
+                <span className="text-xs text-gray-600">
+                  0{skills.indexOf(skill) + 1}
+                </span>
+
+              </div>
+
+              <h3 className="mt-6 text-lg font-semibold text-white transition-colors group-hover:text-cyan-400">
+                {skill.name}
               </h3>
-            </div>
+
+              <p className="mt-2 text-xs text-gray-500">
+                {skill.level}
+              </p>
+
+            </article>
           ))}
 
         </div>

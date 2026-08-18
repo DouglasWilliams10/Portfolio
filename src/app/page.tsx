@@ -1,21 +1,26 @@
-import Hero from "../components/hero/Hero";
-import About from "../components/sections/About";
-import Projects from "../components/sections/Projects";
-import Skills from "../components/sections/Skills";
-import Timeline from "../components/sections/Timeline";
+import Hero from "@/src/components/hero/Hero";
+import About from "@/src/components/sections/About";
+import Skills from "@/src/components/sections/Skills";
+import Projects from "@/src/components/sections/Projects";
+import Timeline from "@/src/components/sections/Timeline";
+import Contact from "./contato/Contact";
+
+
 
 export default function Home() {
-    return (
-        <main>
-           <Hero />
+  return (
+    <main>
+      <Hero />
 
-            <About />
+      <About />
 
-            <Skills />
+      <Skills />
 
-            <Projects />
+      <Projects />
 
-            <Timeline />
-        </main>
-    )
+      <Timeline />
+
+      <Contact />
+    </main>
+  );
 }
