@@ -1,5 +1,7 @@
+import { Projeto } from "@/src/domain/projeto/entities/Projeto";
+
 export const projects = [
-  {
+  new Projeto({
     title: "Sistema de Gestão",
     description:
       "Sistema desenvolvido para gerenciamento de clientes, produtos e pedidos.",
@@ -9,9 +11,9 @@ export const projects = [
       "MySQL",
     ],
     category: "Desktop",
-  },
+  }),
 
-  {
+  new Projeto({
     title: "Portfolio Next.js",
     description:
       "Portfólio profissional desenvolvido com Next.js, TypeScript e Tailwind CSS.",
@@ -22,9 +24,9 @@ export const projects = [
       "Tailwind",
     ],
     category: "Web",
-  },
+  }),
 
-  {
+  new Projeto({
     title: "Consultas PostgreSQL",
     description:
       "Projeto focado em consultas SQL, relatórios, joins, filtros e manipulação de dados.",
@@ -34,5 +36,5 @@ export const projects = [
       "DBeaver",
     ],
     category: "Database",
-  },
+  }),
 ];

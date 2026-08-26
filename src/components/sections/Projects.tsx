@@ -1,5 +1,5 @@
 import { projects } from "@/src/data/projects";
-import ScrollReveal from "../ui/ScrollReveal";
+// import ScrollReveal from "../ui/ScrollReveal";
 
 
 export default function Projects() {
@@ -30,7 +30,43 @@ export default function Projects() {
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-                    {projects.map((project, index) => (
+                    {projects.map((project) => (
+    <article
+        key={project.title}
+        className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/10"
+    >
+        <div className="mb-6 flex items-center justify-between">
+            <span className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs text-cyan-400">
+                {project.category}
+            </span>
+
+            <span className="text-gray-600 transition-colors group-hover:text-cyan-400">
+                ↗
+            </span>
+        </div>
+
+        <h3 className="text-xl font-semibold text-white">
+            {project.title}
+        </h3>
+
+        <p className="mt-3 text-sm leading-6 text-gray-400">
+            {project.description}
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+            {project.technologies.map((technology) => (
+                <span
+                    key={technology}
+                    className="rounded-md bg-white/5 px-2 py-1 text-xs text-gray-400"
+                >
+                    {technology}
+                </span>
+            ))}
+        </div>
+    </article>
+))}
+
+                    {/* {projects.map((project, index) => (
                         <ScrollReveal
                             key={project.title}
                             delay={index * 0.1}
@@ -75,7 +111,7 @@ export default function Projects() {
 
                             </article>
                         </ScrollReveal>
-                    ))}
+                    ))} */}
 
                 </div>
 
