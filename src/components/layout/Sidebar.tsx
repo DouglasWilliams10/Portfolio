@@ -77,7 +77,7 @@ export default function Sidebar() {
       <div className="flex flex-col gap-4">
 
         <Link
-          href="https://github.com"
+          href="https://github.com/DouglasWilliams10"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
@@ -87,7 +87,7 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/douglaswilliamssp"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
@@ -97,11 +97,11 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          href="#contato"
+          href="mailto:douglaswilliamssp@gmail.com"
           title="Contato"
           className="text-gray-500 transition-all duration-300 hover:scale-110 hover:text-cyan-400"
         >
-          <Mail size={19} />
+          <Mail size={19} aria-label="Email" />
         </Link>
 
       </div>

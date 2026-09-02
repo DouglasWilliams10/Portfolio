@@ -61,7 +61,7 @@ export default function Contact() {
               </Link>
 
               <Link
-                href="https://github.com"
+                href="https://github.com/DouglasWilliams10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group rounded-2xl border border-white/10 bg-white/5 p-5 transition-all hover:-translate-y-1 hover:border-cyan-400/40"
