@@ -28,7 +28,7 @@ export default function Skills() {
 
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <article
               key={skill.name}
               className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/[0.04]"
@@ -40,7 +40,7 @@ export default function Skills() {
                 </span>
 
                 <span className="text-xs text-gray-600">
-                  0{skills.indexOf(skill) + 1}
+                  0{index + 1}
                 </span>
 
               </div>

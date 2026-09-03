@@ -1,7 +1,7 @@
-import { Projeto } from "@/src/domain/projeto/entities/Projeto";
+import { Project } from "@/src/domain/projeto/entities/Project";
 
 export const projects = [
-  new Projeto({
+  new Project({
     title: "Sistema de Gestão",
     description:
       "Sistema desenvolvido para gerenciamento de clientes, produtos e pedidos.",
@@ -13,7 +13,7 @@ export const projects = [
     category: "Desktop",
   }),
 
-  new Projeto({
+  new Project({
     title: "Portfolio Next.js",
     description:
       "Portfólio profissional desenvolvido com Next.js, TypeScript e Tailwind CSS.",
@@ -26,7 +26,7 @@ export const projects = [
     category: "Web",
   }),
 
-  new Projeto({
+  new Project({
     title: "Consultas PostgreSQL",
     description:
       "Projeto focado em consultas SQL, relatórios, joins, filtros e manipulação de dados.",

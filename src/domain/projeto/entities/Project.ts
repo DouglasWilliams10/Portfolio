@@ -1,14 +1,14 @@
-export interface ProjetoProps {
+export interface ProjectProps {
   title: string;
   description: string;
   technologies: string[];
   category: string;
 }
 
-export class Projeto {
-  private readonly props: ProjetoProps;
+export class Project {
+  private readonly props: ProjectProps;
 
-  constructor(props: ProjetoProps) {
+  constructor(props: ProjectProps) {
     this.props = props;
   }
 
