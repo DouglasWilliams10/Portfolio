@@ -3,6 +3,8 @@ export interface ProjectProps {
   description: string;
   technologies: string[];
   category: string;
+  githubUrl?: string;
+  demoUrl?: string;
 }
 
 export class Project {
@@ -27,4 +29,13 @@ export class Project {
   get category(): string {
     return this.props.category;
   }
+
+  get githubUrl(): string | undefined {
+    return this.props.githubUrl;
+  }
+
+  get demoUrl(): string | undefined {
+    return this.props.demoUrl;
+  }
+
 }

@@ -24,6 +24,8 @@ export const projects = [
       "Tailwind",
     ],
     category: "Web",
+    githubUrl: "https://github.com/DouglasWilliams10/Portfolio",
+    demoUrl: "https://portfolio-nextjs.vercel.app"
   }),
 
   new Project({

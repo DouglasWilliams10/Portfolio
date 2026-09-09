@@ -1,12 +1,15 @@
 "use client";
 import { useState } from "react";
-
-import { projects } from "@/src/data/projects";
+import { ProjectsRepository } from "@/src/data/repositories/ProjectsRepository";
 import ScrollReveal from "../ui/ScrollReveal";
 
 
 export default function Projects() {
+    const repository = new ProjectsRepository();
+    const projects = repository.list();
+
     const [activeCategory, setActiveCategory] = useState("All");
+    
     const categories = [
         "All",
         "Web",
