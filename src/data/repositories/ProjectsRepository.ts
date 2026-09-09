@@ -24,7 +24,6 @@ export class ProjectsRepository implements ProjectRepository {
   }
 
   // Lista os projetos por categoria
-  // Lista os projetos por categoria
   listByCategory(category: string): Project[] {
     return this.list().filter(
       (project) => project.categories.includes(category)
