@@ -11,7 +11,7 @@ export class ProjectsRepository implements ProjectRepository {
           title: project.title,
           description: project.description,
           technologies: project.technologies,
-          category: project.category,
+          categories: project.categories,
           githubUrl: project.githubUrl,
           demoUrl: project.demoUrl
         })
@@ -24,9 +24,10 @@ export class ProjectsRepository implements ProjectRepository {
   }
 
   // Lista os projetos por categoria
+  // Lista os projetos por categoria
   listByCategory(category: string): Project[] {
     return this.list().filter(
-      (project) => project.category === category
+      (project) => project.categories.includes(category)
     );
   }
 }

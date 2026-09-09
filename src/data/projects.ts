@@ -10,33 +10,55 @@ export const projects = [
       "Windows Forms",
       "MySQL",
     ],
-    category: "Desktop",
+    categories: ["Desktop"],
   }),
 
   new Project({
-    title: "Portfolio Next.js",
+    title: "Portfolio",
     description:
       "Portfólio profissional desenvolvido com Next.js, TypeScript e Tailwind CSS.",
     technologies: [
       "Next.js",
       "React",
       "TypeScript",
-      "Tailwind",
+      "Tailwind CSS",
+      "Vercel"
     ],
-    category: "Web",
+    categories: [
+      "Web",
+      "DataBase"
+    ],
     githubUrl: "https://github.com/DouglasWilliams10/Portfolio",
-    demoUrl: "https://portfolio-nextjs.vercel.app"
+    demoUrl: "https://portfolio-six-ebon-40.vercel.app/"
   }),
 
   new Project({
-    title: "Consultas PostgreSQL",
+    title: "F4 Bank - Landingpage",
     description:
-      "Projeto focado em consultas SQL, relatórios, joins, filtros e manipulação de dados.",
+      "Projeto inicial, focado em apredenzado de front-end para conhecimento das estruturas basicas de uma web page",
     technologies: [
-      "PostgreSQL",
-      "SQL",
-      "DBeaver",
+      "JavaScript",
+      "HTML",
+      "CSS",
     ],
-    category: "Database",
+    categories: ["Web"],
+    githubUrl: "https://github.com/DouglasWilliams10/e-commerce-gamer-backend",
+    demoUrl: "https://landingpage-f4bank.surge.sh/"
   }),
+
+  new Project({
+    title: "MoveFit Academia",
+    description: 
+      "O MoveFit é um projeto web desenvolvido para representar a presença digital de uma academia, com foco em uma experiência moderna, objetiva e responsiva.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    categories: ["Web"],
+    githubUrl: "https://github.com/DouglasWilliams10/movefit-academia",
+    demoUrl: "https://movefit-academia.vercel.app/?utm_source=chatgpt.com"
+  })
 ];

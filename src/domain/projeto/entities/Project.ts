@@ -2,7 +2,7 @@ export interface ProjectProps {
   title: string;
   description: string;
   technologies: string[];
-  category: string;
+  categories: string[];
   githubUrl?: string;
   demoUrl?: string;
 }
@@ -26,8 +26,8 @@ export class Project {
     return this.props.technologies;
   }
 
-  get category(): string {
-    return this.props.category;
+  get categories(): string[] {
+    return this.props.categories;
   }
 
   get githubUrl(): string | undefined {
