@@ -26,7 +26,7 @@ export const projects = [
     ],
     categories: [
       "Web",
-      "DataBase"
+      "Database"
     ],
     githubUrl: "https://github.com/DouglasWilliams10/Portfolio",
     demoUrl: "https://portfolio-six-ebon-40.vercel.app/"

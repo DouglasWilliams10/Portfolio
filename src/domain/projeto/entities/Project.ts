@@ -23,11 +23,11 @@ export class Project {
   }
 
   get technologies(): string[] {
-    return this.props.technologies;
+    return [...this.props.technologies];
   }
 
   get categories(): string[] {
-    return this.props.categories;
+    return [...this.props.categories];
   }
 
   get githubUrl(): string | undefined {
