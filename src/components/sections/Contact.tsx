@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <section
-      id="contato"
+      id="contacts"
       className="relative py-32"
     >
       <div className="mx-auto max-w-5xl px-6">

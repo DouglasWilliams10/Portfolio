@@ -57,11 +57,11 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button href="#projetos">
+              <Button href="#projects">
                 Explorar projetos
               </Button>
 
-              <Button href="#contato">
+              <Button href="#contacts">
                 Entrar em contato
               </Button>
             </div>
