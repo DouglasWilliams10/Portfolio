@@ -33,7 +33,7 @@ const menuItems = [
   },
   {
     label: "Projetos",
-    href: "#projetos",
+    href: "#projects",
     icon: Briefcase,
   },
 ];
