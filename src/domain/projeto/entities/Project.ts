@@ -1,4 +1,5 @@
 export interface ProjectProps {
+  id: string;
   title: string;
   description: string;
   technologies: string[];
@@ -12,6 +13,10 @@ export class Project {
 
   constructor(props: ProjectProps) {
     this.props = props;
+  }
+
+  get id(): string {
+    return this.props.id;
   }
 
   get title(): string {

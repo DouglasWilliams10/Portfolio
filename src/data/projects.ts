@@ -2,6 +2,7 @@ import { Project } from "@/src/domain/projeto/entities/Project";
 
 export const projects = [
   new Project({
+    id: "sistema-gestao",
     title: "Sistema de Gestão",
     description:
       "Sistema desenvolvido para gerenciamento de clientes, produtos e pedidos.",
@@ -14,6 +15,7 @@ export const projects = [
   }),
 
   new Project({
+    id: "portfolio",
     title: "Portfolio",
     description:
       "Portfólio profissional desenvolvido com Next.js, TypeScript e Tailwind CSS.",
@@ -33,6 +35,7 @@ export const projects = [
   }),
 
   new Project({
+    id: "f4-bank-landingpage",
     title: "F4 Bank - Landingpage",
     description:
       "Projeto inicial, focado em apredenzado de front-end para conhecimento das estruturas basicas de uma web page",
@@ -47,6 +50,7 @@ export const projects = [
   }),
 
   new Project({
+    id: "movefit-academia",
     title: "MoveFit Academia",
     description: 
       "O MoveFit é um projeto web desenvolvido para representar a presença digital de uma academia, com foco em uma experiência moderna, objetiva e responsiva.",

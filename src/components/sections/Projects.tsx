@@ -1,12 +1,11 @@
 "use client";
 import { useState } from "react";
-import { ProjectsRepository } from "@/src/data/repositories/ProjectsRepository";
 import ScrollReveal from "../ui/ScrollReveal";
+import { ProgectsService} from "@/src/application/project/services/ProjectService"
 
 
 export default function Projects() {
-    const repository = new ProjectsRepository();
-    const projects = repository.list();
+    const projects = ProgectsService.getProjects()
 
     const [activeCategory, setActiveCategory] = useState("All");
 
@@ -73,7 +72,7 @@ export default function Projects() {
 
                     {filteredProjects.map((project, index) => (
                         <ScrollReveal
-                            key={project.title}
+                            key={project.id}
                             delay={index * 0.2}
                         >
                             <article
