@@ -33,7 +33,7 @@ export default function RootLayout({
       <body>
         <Sidebar />
 
-        <div className="lg:pl-20">
+        <div className="pb-20 lg:pb-0 lg:pl-20">
           {children}
         </div>
       </body>
