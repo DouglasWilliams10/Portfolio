@@ -1,6 +1,6 @@
-import "./estudos.css";
+import "./studies.css";
 
-export default function EstudosLayout({
+export default function StudiesLayout({
   children,
 }: {
   children: React.ReactNode;
