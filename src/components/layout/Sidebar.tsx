@@ -10,11 +10,11 @@ const menuItems = [
   { label: "Sobre", href: "/#sobre", icon: User },
   { label: "Skills", href: "/#skills", icon: Code2 },
   { label: "Projetos", href: "/#projects", icon: Briefcase },
-  { label: "Estudos", href: "/estudos", icon: BookOpen },
+  { label: "Estudos", href: "/studies", icon: BookOpen },
 ];
 export default function Sidebar() {
   const pathname = usePathname();
-  const inStudies = pathname === "/estudos" || pathname.startsWith("/estudos/");
+  const inStudies = pathname === "/studies" || pathname.startsWith("/studies/");
   return (
     <>
       <aside className="fixed left-0 top-0 z-50 hidden h-screen w-20 border-r border-white/10 bg-black/60 backdrop-blur-xl lg:flex lg:flex-col lg:items-center lg:justify-between lg:py-8">
@@ -42,13 +42,11 @@ export default function Sidebar() {
         </div>
       </aside>
       <nav aria-label="Navegação principal no celular" className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-5 border-t border-white/10 bg-[#030712]/95 px-1 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden">
-        {menuItems.map((item) => {
-          const Icon = item.icon; const active = item.label === "Estudos" && inStudies;
+        {menuItems.map((item) => { const Icon = item.icon; const active = item.label === "Estudos" && inStudies;
           return <Link key={item.label} href={item.href} aria-current={active ? "page" : undefined}
             className={`flex min-h-16 min-w-0 flex-col items-center justify-center gap-1 rounded-lg text-[11px] focus-visible:outline-2 focus-visible:outline-cyan-400 ${active ? "text-cyan-400" : "text-gray-400 hover:text-cyan-400"}`}>
             <Icon size={20} aria-hidden="true" /><span>{item.label}</span>
-          </Link>;
-        })}
+          </Link>; })}
       </nav>
     </>
   );

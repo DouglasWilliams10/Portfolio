@@ -23,7 +23,7 @@ export const csharpDddCrudStudy = {
   ],
   "sourceTitle": "CSharp Apresentacao Conceitos e Praticas.pptx",
   "sourceSlides": 80,
-  "materialUrl": "/estudos/materiais/csharp-ddd-crud/material.pptx",
+  "materialUrl": "/studies/materiais/csharp-ddd-crud/material.pptx",
   "published": true,
   "version": 1,
   "introduction": [

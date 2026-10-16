@@ -1,7 +1,8 @@
 "use client";
 
+import { normalizeProgress } from "@/src/application/project/study/normalizeProgress";
 import { useMemo, useSyncExternalStore } from "react";
-import { normalizeProgress } from "@/src/application/study/normalizeProgress";
+
 
 const memory = new Map<string, string>();
 const volatileKeys = new Set<string>();

@@ -3,7 +3,8 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import type { QuizQuestion } from "@/src/domain/study/entities/Study";
-import { gradeQuiz, type QuizAnswers } from "@/src/application/study/gradeQuiz";
+import { gradeQuiz, type QuizAnswers  } from "@/src/application/project/study/gradeQuiz";
+
 
 type CompleteResult = { complete: true; correct: number; total: number; grade: number };
 export default function Quiz({ questions, slug }: { questions: QuizQuestion[]; slug: string }) {
@@ -56,7 +57,7 @@ export default function Quiz({ questions, slug }: { questions: QuizQuestion[]; s
               <strong>{isCorrect ? "Resposta correta." : "Resposta incorreta."}</strong>
               <p>Gabarito: {String.fromCharCode(65 + question.correctOption)} — {question.options[question.correctOption]}</p>
               <p>{question.explanation}</p>
-              <Link href={`/estudos/${slug}#${question.sectionId}`}>Revisar o módulo correspondente →</Link>
+              <Link href={`/studies/${slug}#${question.sectionId}`}>Revisar o módulo correspondente →</Link>
               <small>Base: slides {question.sourceSlides.join(", ")} da apresentação.</small>
             </div>}
           </fieldset>;

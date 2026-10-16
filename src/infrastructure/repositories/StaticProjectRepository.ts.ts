@@ -1,5 +1,5 @@
-import { Project } from "@/src/domain/projeto/entities/Project";
-import { ProjectRepository } from "@/src/domain/projeto/repositories/ProjectsRepository";
+import { Project } from "@/src/domain/project/entities/Project";
+import { ProjectRepository } from "@/src/domain/project/repositories/ProjectsRepository";
 import { projects } from "@/src/data/projects";
 
 export class StaticProjectRepository implements ProjectRepository {

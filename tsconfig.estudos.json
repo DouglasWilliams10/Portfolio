@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "incremental": false, "noEmit": true },
+  "include": [
+    "next-env.d.ts",
+    "src/app/studies/**/*.ts", "src/app/studies/**/*.tsx",
+    "src/components/studies/**/*.ts", "src/components/studies/**/*.tsx",
+    "src/components/layout/Sidebar.tsx",
+    "src/data/studies/**/*.ts", "src/domain/study/**/*.ts", "src/application/study/**/*.ts"
+  ],
+  "exclude": ["node_modules", ".next", "prisma7.config.ts"]
+}

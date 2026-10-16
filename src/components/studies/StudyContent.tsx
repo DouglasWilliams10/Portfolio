@@ -28,7 +28,8 @@ export default function StudyContent({ study }: { study: Study }) {
       <section id="contexto" className="study-module" tabIndex={-1} aria-labelledby="contexto-title">
         <p className="study-eyebrow">CONTEXTO E CONVENÇÕES</p><h2 id="contexto-title">Antes de começar</h2>
         <p>Este estudo reorganiza os textos, exemplos e notas da apresentação em uma leitura na web. As referências a slides indicam a origem do conteúdo, não uma sequência de imagens para visualizar.</p>
-        <aside className="study-callout"><strong>Escopo do material</strong><p>Os exemplos C# são didáticos. Os trechos, alternativas e pré-requisitos foram preservados; não constituem um projeto .NET compilado nesta entrega. O PPTX menciona anexos anteriores, mas a fonte efetivamente utilizada aqui foi a apresentação enviada, incluindo suas notas.</p></aside>
+        <aside className="study-callout"><strong>Escopo do material</strong><p>Os exemplos C# são didáticos. Os trechos, alternativas e pré-requisitos foram preservados; não constituem um projeto .NET compilado 
+          nesta entrega. O PPTX menciona anexos anteriores, mas a fonte efetivamente utilizada aqui foi a apresentação enviada, incluindo suas notas.</p></aside>
         <details className="study-context-details"><summary>Ver contexto, convenções e responsabilidades dos arquivos</summary>
           {study.introduction.map((lesson) => <Lesson key={lesson.id} lesson={lesson} />)}
         </details>
@@ -51,7 +52,7 @@ export default function StudyContent({ study }: { study: Study }) {
             <div className="study-prev-next">
               {index > 0 && <a href={`#${study.sections[index - 1].id}`}>← Módulo anterior</a>}
               {index < study.sections.length - 1 ? <a href={`#${study.sections[index + 1].id}`}>Próximo módulo →</a> :
-                <Link href={`/estudos/${study.slug}/questionario`}>Fazer questionário →</Link>}
+                <Link href={`/studies/${study.slug}/questionnaire`}>Fazer questionário →</Link>}
             </div>
           </div>
         </section>
@@ -66,7 +67,7 @@ export default function StudyContent({ study }: { study: Study }) {
       </section>
       <section className="study-final-cta"><p className="study-eyebrow">AGORA É SUA VEZ</p><h2>Da leitura à prática.</h2>
         <p>Responda às dez questões e confira a explicação de cada resposta. A nota vai de 0 a 10.</p>
-        <Link href={`/estudos/${study.slug}/questionario`} className="study-button">Fazer questionário →</Link>
+        <Link href={`/studies/${study.slug}/questionnaire`} className="study-button">Fazer questionário →</Link>
       </section>
     </div>
   );

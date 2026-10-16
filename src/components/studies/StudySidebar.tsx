@@ -40,7 +40,7 @@ export default function StudySidebar({ slug, version, sections }: SidebarProps) 
       <div className="study-toc-desktop"><p className="study-eyebrow">NESTE ESTUDO</p>{navigation}</div>
       <details className="study-toc-mobile"><summary>Sumário do estudo</summary>{navigation}</details>
       <StudyProgress slug={slug} version={version} sectionIds={ids} />
-      <Link className="study-button study-button-secondary study-toc-quiz" href={`/estudos/${slug}/questionario`}>Ir para o questionário →</Link>
+      <Link className="study-button study-button-secondary study-toc-quiz" href={`/studies/${slug}/questionnaire`}>Ir para o questionário →</Link>
     </aside>
   );
 }

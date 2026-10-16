@@ -1,4 +1,4 @@
-import { Project } from "@/src/domain/projeto/entities/Project";
+import { Project } from "@/src/domain/project/entities/Project";
 
 export const projects = [
   new Project({

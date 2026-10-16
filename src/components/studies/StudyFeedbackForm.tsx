@@ -1,7 +1,8 @@
 "use client";
 
+import { validateFeedback, type FeedbackErrors, type FeedbackInput } from "@/src/application/project/study/validateFeedback";
 import { useState } from "react";
-import { validateFeedback, type FeedbackErrors, type FeedbackInput } from "@/src/application/study/validateFeedback";
+
 
 const initial: FeedbackInput = { name: "", email: "", kind: "sugestao", subject: "", message: "" };
 export default function StudyFeedbackForm({ studyTitle }: { studyTitle: string }) {
