@@ -1,11 +1,14 @@
-"use client";
-import { useState } from "react";
-import ScrollReveal from "../ui/ScrollReveal";
-import { ProgectsService} from "@/src/application/project/services/ProjectService"
 
+"use client";
+
+import { useState } from "react";
+import { ExternalLink, Monitor } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+import ScrollReveal from "../ui/ScrollReveal";
+import { ProgectsService } from "@/src/application/project/services/ProjectService";
 
 export default function Projects() {
-    const projects = ProgectsService.getProjects()
+    const projects = ProgectsService.getProjects();
 
     const [activeCategory, setActiveCategory] = useState("All");
 
@@ -16,17 +19,15 @@ export default function Projects() {
         "Database",
     ];
 
-    const filteredProjects = activeCategory === "All"
-        ? projects
-        : projects.filter((project) =>
-            project.categories.includes(activeCategory)
-        );
+    const filteredProjects =
+        activeCategory === "All"
+            ? projects
+            : projects.filter((project) =>
+                project.categories.includes(activeCategory)
+            );
 
     return (
-        <section
-            id="projects"
-            className="relative py-24"
-        >
+        <section id="projects" className="relative py-24">
             <div className="mx-auto max-w-7xl px-6">
 
                 <div className="mb-12">
@@ -56,10 +57,11 @@ export default function Projects() {
                                 key={category}
                                 type="button"
                                 onClick={() => setActiveCategory(category)}
-                                className={`rounded-xl border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${isActive
-                                    ? "border-cyan-400/50 bg-cyan-400/10 text-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.12)]"
-                                    : "border-white/10 bg-white/[0.03] text-gray-500 hover:border-cyan-400/30 hover:text-cyan-400"
-                                    }`}
+                                className={`rounded-xl border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${
+                                    isActive
+                                        ? "border-cyan-400/50 bg-cyan-400/10 text-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.12)]"
+                                        : "border-white/10 bg-white/[0.03] text-gray-500 hover:border-cyan-400/30 hover:text-cyan-400"
+                                }`}
                             >
                                 {category}
                             </button>
@@ -68,16 +70,13 @@ export default function Projects() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-
-
                     {filteredProjects.map((project, index) => (
                         <ScrollReveal
                             key={project.id}
                             delay={index * 0.2}
                         >
-                            <article
-                                className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/10"
-                            >
+                            <article className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/10">
+
                                 <div className="mb-6 flex items-center justify-between">
                                     <div className="flex flex-wrap gap-2">
                                         {project.categories.map((category) => (
@@ -99,7 +98,7 @@ export default function Projects() {
                                     {project.title}
                                 </h3>
 
-                                <p className="mt-3 text-sm leading-6 text-gray-400">
+                                <p className="mt-3 flex-1 text-sm leading-6 text-gray-400">
                                     {project.description}
                                 </p>
 
@@ -113,10 +112,42 @@ export default function Projects() {
                                         </span>
                                     ))}
                                 </div>
+
+                                {(project.githubUrl || project.demoUrl) && (
+                                    <div className="mt-6 flex flex-wrap gap-3 border-t border-white/10 pt-5">
+
+                                        {project.githubUrl && (
+                                            <a
+                                                href={project.githubUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 transition-all hover:border-cyan-400/40 hover:text-cyan-400"
+                                            >
+                                                <FaGithub size={16} />
+                                                Código-fonte
+                                                <ExternalLink size={13} />
+                                            </a>
+                                        )}
+
+                                        {project.demoUrl && (
+                                            <a
+                                                href={project.demoUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 rounded-lg border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-400/20"
+                                            >
+                                                <Monitor size={16} />
+                                                Demonstração
+                                                <ExternalLink size={13} />
+                                            </a>
+                                        )}
+
+                                    </div>
+                                )}
+
                             </article>
                         </ScrollReveal>
                     ))}
-
                 </div>
 
             </div>

@@ -64,5 +64,26 @@ export const projects = [
     categories: ["Web"],
     githubUrl: "https://github.com/DouglasWilliams10/movefit-academia",
     demoUrl: "https://movefit-academia.vercel.app/?utm_source=chatgpt.com"
-  })
+  }),
+
+  new Project({
+    id: "dj-finance-ai",
+    title: "DJ Finance AI",
+    description:
+  "Sistema de gestão financeira pessoal desenvolvido com Next.js e TypeScript, com controle de receitas, despesas, transações e cofres financeiros. Possui arquitetura preparada para futuras funcionalidades de inteligência artificial.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Prisma",
+      "NextAuth",
+      "Zod",
+    ],
+    categories: ["Web", "Database"],
+    githubUrl:
+      "https://github.com/DouglasWilliams10/DJ-Finance-AI-Academico",
+  }),
+
 ];
